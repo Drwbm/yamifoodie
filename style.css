@@ -28,7 +28,8 @@
       --line: rgba(236,229,208,0.18);
   }
   html,body{height:100%;}
-  body{background-color: #FFF8E7;
+  body{
+      background-color: #FFF8E7;
     margin:0;
     background:var(--paper);
     color:var(--charcoal);
