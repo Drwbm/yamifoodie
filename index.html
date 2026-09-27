@@ -59,7 +59,65 @@
     </div>
   </div>
 </section>
+<section class="food-menu">
+  <h2>Our Menu</h2>
+  <p class="menu-subtitle">Choose a dish</p>
 
+  <div class="food-wheel">
+
+    <!-- Rotating dishes -->
+    <div class="food-orbit" id="foodOrbit">
+
+      <div class="food-item" onclick="selectDish(0)">
+        <img src="assets/chicken.jpg" alt="Chicken">
+      </div>
+
+      <div class="food-item" onclick="selectDish(1)">
+        <img src="assets/burger.jpg" alt="Burger">
+      </div>
+
+      <div class="food-item" onclick="selectDish(2)">
+        <img src="assets/pizza.jpg" alt="Pizza">
+      </div>
+
+      <div class="food-item" onclick="selectDish(3)">
+        <img src="assets/fish.jpg" alt="Fish">
+      </div>
+
+      <div class="food-item" onclick="selectDish(4)">
+        <img src="assets/pasta.jpg" alt="Pasta">
+      </div>
+
+      <div class="food-item" onclick="selectDish(5)">
+        <img src="assets/rice.jpg" alt="Rice">
+      </div>
+
+    </div>
+
+    <!-- Big selected dish -->
+    <div class="selected-dish">
+
+      <img id="bigDish"
+           src="assets/chicken.jpg"
+           alt="Selected dish">
+
+      <!-- Price circle -->
+      <div class="price-circle" id="dishPrice">
+        K85
+      </div>
+
+      <h3 id="dishName">Chicken</h3>
+
+    </div>
+
+  </div>
+
+  <div class="menu-buttons">
+    <button onclick="previousDish()">← Previous</button>
+    <button onclick="nextDish()">Next →</button>
+  </div>
+
+</section>
 <section id="menu" style="background:var(--paper-dim); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
   <div class="wrap">
     <div class="section-head">
