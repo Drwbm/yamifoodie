@@ -29,6 +29,11 @@ const dishes = [
     price: "K55",
     image: "assets/file_0000000026a081f4a61cba973984047a.png"
   }
+  {
+  name: "Nshima",
+  price: "k80",
+  image: "assets/nshima.jpg"
+}
 ];
 
 let currentDish = 0;
