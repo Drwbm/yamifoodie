@@ -520,3 +520,31 @@ button:hover,
 .button:hover {
   background: #39FF14;
 }
+/* FORCE ALL WEBSITE TEXT TO BE VISIBLE */
+body,
+body * {
+  color: #7CFC00 !important;
+}
+
+/* Keep normal paragraphs softer for readability */
+p,
+li {
+  color: #E8FFE8 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #7CFC00 !important;
+}
+
+/* Links */
+a {
+  color: #7CFC00 !important;
+}
+
+/* Buttons */
+button,
+.btn,
+.button {
+  color: #071707 !important;
+}
