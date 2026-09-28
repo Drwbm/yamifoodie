@@ -2,32 +2,32 @@ const dishes = [
   {
     name: "Chicken",
     price: "K85",
-    image: "assets/chicken.jpg"
+    image: "assets/buttermilk-fried-chicken-recipe-2.jpg"
   },
   {
     name: "Burger",
     price: "K70",
-    image: "assets/burger.jpg"
+    image: "assets/Cook-Burgers-on-the-Stove-FT24_277152_EC_0904_1-vert-social (1).jpg"
   },
   {
     name: "Pizza",
-    price: "K90",
+    price: "K75",
     image: "assets/pizza.jpg"
   },
   {
     name: "Fish",
-    price: "K80",
-    image: "assets/fish.jpg"
+    price: "K90",
+    image: "assets/file_000000008504820a8f257ec6b4bc5ac8.png"
   },
   {
     name: "Pasta",
-    price: "K75",
-    image: "assets/pasta.jpg"
+    price: "K65",
+    image: "assets/crockpot-spaghetti-8.jpg"
   },
   {
     name: "Rice",
-    price: "K60",
-    image: "assets/rice.jpg"
+    price: "K55",
+    image: "assets/file_0000000026a081f4a61cba973984047a.png"
   }
 ];
 
