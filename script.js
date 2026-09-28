@@ -38,34 +38,62 @@ const dishes = [
 
 let currentDish = 0;
 
-
-// Show selected dish
-function showDish(index) {
-  currentDish = index;
-
-  const dish = dishes[currentDish];
-
-  document.getElementById("bigDish").src = dish.image;
-  document.getElementById("bigDish").alt = dish.name;
-
-  document.getElementById("dishName").textContent = dish.name;
-  document.getElementById("dishPrice").textContent = dish.price;
-}
-
-
-// Select a dish by clicking its small image
+// Select and display any dish
 function selectDish(index) {
-  showDish(index);
+  if (index < 0 || index >= dishes.length) {
+    console.error("Invalid dish index:", index);
+    return;
+  }
+
+  currentDish = index;
+  const dish = dishes[index];
+
+  const bigDish = document.getElementById("bigDish");
+  const dishName = document.getElementById("dishName");
+  const dishPrice = document.getElementById("dishPrice");
+
+  if (bigDish) {
+    bigDish.src = dish.image;
+    bigDish.alt = dish.name;
+  }
+
+  if (dishName) {
+    dishName.textContent = dish.name;
+  }
+
+  if (dishPrice) {
+    dishPrice.textContent = dish.price;
+  }
+
+  console.log("Selected:", dish.name);
 }
 
-
-// Next button
+// Next dish
 function nextDish() {
   currentDish++;
 
   if (currentDish >= dishes.length) {
     currentDish = 0;
   }
+
+  selectDish(currentDish);
+}
+
+// Previous dish
+function previousDish() {
+  currentDish--;
+
+  if (currentDish < 0) {
+    currentDish = dishes.length - 1;
+  }
+
+  selectDish(currentDish);
+}
+
+// Start with Chicken
+document.addEventListener("DOMContentLoaded", function () {
+  selectDish(0);
+});
 
   showDish(currentDish);
 }
