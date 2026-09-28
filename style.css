@@ -408,10 +408,7 @@
 
 }
 body {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("assets/360_F_278693728_O7t0fe2oDwwucHisBR1i8UhVxE5N229G (1).jpg");
-
+  background-image: url("assets/restaurant-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
