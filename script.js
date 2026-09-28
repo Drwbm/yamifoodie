@@ -1,3 +1,4 @@
+
 const dishes = [
   {
     name: "Chicken",
@@ -28,12 +29,12 @@ const dishes = [
     name: "Rice",
     price: "K55",
     image: "assets/file_0000000026a081f4a61cba973984047a.png"
-  }
+  },
   {
-  name: "Nshima",
-  price: "k80",
-  image: "assets/nshima.jpg"
-}
+    name: "Nshima",
+    price: "K80",
+    image: "assets/nshima.jpg"
+  }
 ];
 
 let currentDish = 0;
