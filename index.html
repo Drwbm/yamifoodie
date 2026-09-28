@@ -46,7 +46,21 @@
   TEST NSHIMA
 </button>
 <svg class="vein" viewBox="0 0 1180 34" preserveAspectRatio="none"><path d="M0 17 C 250 5, 350 30, 590 17 S 930 5, 1180 17"/></svg>
+<button onclick="testNshima()">TEST NSHIMA</button>
 
+<script>
+function testNshima() {
+  const bigDish = document.getElementById("bigDish");
+
+  bigDish.src = "assets/file_0000000003c881f4be9b5f1772cff4ac.png";
+  bigDish.alt = "Nshima";
+
+  document.getElementById("dishName").textContent = "Nshima";
+  document.getElementById("dishPrice").textContent = "K80";
+}
+</script>
+
+</body>
 <section id="about">
   <div class="wrap about-grid">
     <div>
