@@ -415,3 +415,15 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+/* Bright apple green text */
+body {
+  color: #7CFC00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #7CFC00 !important;
+}
+
+p, li, span {
+  color: #7CFC00;
+}
