@@ -45,8 +45,8 @@ let currentDish = 0;
 
 function selectDish(index) {
 
-  if (index < 0 || index >= dishes.length) {
-    console.error("Invalid dish index:", index);
+  if (!dishes[index]) {
+    console.error("Dish not found:", index);
     return;
   }
 
@@ -108,33 +108,9 @@ function previousDish() {
 
 
 // =========================
-// LOAD CHICKEN WHEN PAGE OPENS
+// LOAD FIRST DISH
 // =========================
 
 document.addEventListener("DOMContentLoaded", function () {
   selectDish(0);
 });
-function testNshima() {
-  const bigDish = document.getElementById("bigDish");
-
-  if (!bigDish) {
-    console.error("bigDish element was NOT found!");
-    return;
-  }
-
-  bigDish.src = "assets/file_0000000003c881f4be9b5f1772cff4ac.png";
-  bigDish.alt = "Nshima";
-
-  console.log("Nshima test successful");
-}
-function testNshima() {
-  const bigDish = document.getElementById("bigDish");
-
-  bigDish.src = "assets/file_0000000003c881f4be9b5f1772cff4ac.png";
-  bigDish.alt = "Nshima";
-
-  document.getElementById("dishName").textContent = "Nshima";
-  document.getElementById("dishPrice").textContent = "K80";
-
-  console.log("Nshima test successful");
-}
