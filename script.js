@@ -127,3 +127,14 @@ function testNshima() {
 
   console.log("Nshima test successful");
 }
+function testNshima() {
+  const bigDish = document.getElementById("bigDish");
+
+  bigDish.src = "assets/file_0000000003c881f4be9b5f1772cff4ac.png";
+  bigDish.alt = "Nshima";
+
+  document.getElementById("dishName").textContent = "Nshima";
+  document.getElementById("dishPrice").textContent = "K80";
+
+  console.log("Nshima test successful");
+}
