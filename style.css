@@ -548,3 +548,7 @@ button,
 .button {
   color: #071707 !important;
 }
+body,
+body * {
+  color: #7CFC00 !important;
+}
