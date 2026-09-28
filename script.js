@@ -114,3 +114,16 @@ function previousDish() {
 document.addEventListener("DOMContentLoaded", function () {
   selectDish(0);
 });
+function testNshima() {
+  const bigDish = document.getElementById("bigDish");
+
+  if (!bigDish) {
+    console.error("bigDish element was NOT found!");
+    return;
+  }
+
+  bigDish.src = "assets/file_0000000003c881f4be9b5f1772cff4ac.png";
+  bigDish.alt = "Nshima";
+
+  console.log("Nshima test successful");
+}
