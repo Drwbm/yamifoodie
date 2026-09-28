@@ -32,7 +32,7 @@ const dishes = [
   {
     name: "Nshima",
     price: "K80",
-    image: "assets/nshima.jpg"
+    image: "assets/file_0000000003c881f4be9b5f1772cff4ac.png"
   }
 ];
 
