@@ -10,10 +10,11 @@ const dishes = [
     image: "assets/Cook-Burgers-on-the-Stove-FT24_277152_EC_0904_1-vert-social (1).jpg"
   },
   {
-    name: "Pizza",
-    price: "K75",
-    image: "assets/pizza.jpg"
-  },
+    {
+  name: "Pizza",
+  price: "K75",
+  image: "assets/file_00000000803081f4b27a0bf3429c9ba3.png"
+},
   {
     name: "Fish",
     price: "K90",
