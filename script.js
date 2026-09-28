@@ -38,14 +38,20 @@ const dishes = [
 
 let currentDish = 0;
 
-// Select and display any dish
+
+// =========================
+// SELECT DISH
+// =========================
+
 function selectDish(index) {
+
   if (index < 0 || index >= dishes.length) {
     console.error("Invalid dish index:", index);
     return;
   }
 
   currentDish = index;
+
   const dish = dishes[index];
 
   const bigDish = document.getElementById("bigDish");
@@ -68,8 +74,13 @@ function selectDish(index) {
   console.log("Selected:", dish.name);
 }
 
-// Next dish
+
+// =========================
+// NEXT DISH
+// =========================
+
 function nextDish() {
+
   currentDish++;
 
   if (currentDish >= dishes.length) {
@@ -79,8 +90,13 @@ function nextDish() {
   selectDish(currentDish);
 }
 
-// Previous dish
+
+// =========================
+// PREVIOUS DISH
+// =========================
+
 function previousDish() {
+
   currentDish--;
 
   if (currentDish < 0) {
@@ -90,26 +106,11 @@ function previousDish() {
   selectDish(currentDish);
 }
 
-// Start with Chicken
+
+// =========================
+// LOAD CHICKEN WHEN PAGE OPENS
+// =========================
+
 document.addEventListener("DOMContentLoaded", function () {
   selectDish(0);
 });
-
-  showDish(currentDish);
-}
-
-
-// Previous button
-function previousDish() {
-  currentDish--;
-
-  if (currentDish < 0) {
-    currentDish = dishes.length - 1;
-  }
-
-  showDish(currentDish);
-}
-
-
-// Load Chicken when page opens
-showDish(0);
